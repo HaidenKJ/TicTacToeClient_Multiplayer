@@ -220,27 +220,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 268932567}
-  - component: {fileID: 268932566}
   - component: {fileID: 268932568}
   m_Layer: 0
-  m_Name: NetworkClient
+  m_Name: SceneManagerL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &268932566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268932565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a6039e7d12f394d9679696112290e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!4 &268932567
 Transform:
   m_ObjectHideFlags: 0
