@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 743321483}
   - component: {fileID: 743321484}
   m_Layer: 0
-  m_Name: NetworkClient
+  m_Name: SceneManagerG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

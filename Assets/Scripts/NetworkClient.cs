@@ -13,6 +13,19 @@ public class NetworkClient : MonoBehaviour
     const ushort NetworkPort = 9001;
     const string IPAddress = "154.50.13.40";
 
+    public static NetworkClient Instance;
+    public System.Action<string> OnServerMessage;
+
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);   // a copy already exists, so remove this one
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         networkDriver = NetworkDriver.Create();
@@ -25,6 +38,7 @@ public class NetworkClient : MonoBehaviour
 
     public void OnDestroy()
     {
+        if (Instance != this) return;
         networkConnection.Disconnect(networkDriver);
         networkConnection = default(NetworkConnection);
         networkDriver.Dispose();
@@ -100,6 +114,7 @@ public class NetworkClient : MonoBehaviour
     private void ProcessReceivedMsg(string msg)
     {
         Debug.Log("Msg received = " + msg);
+        OnServerMessage?.Invoke(msg);
     }
 
     public void SendMessageToServer(string msg)
