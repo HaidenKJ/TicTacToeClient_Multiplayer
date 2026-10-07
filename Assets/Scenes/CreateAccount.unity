@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272896543}
   - component: {fileID: 272896542}
+  - component: {fileID: 272896544}
   m_Layer: 0
   m_Name: NetworkClient
   m_TagString: Untagged
@@ -258,6 +259,20 @@ Transform:
   - {fileID: 474252737}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272896544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272896541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f343923dbbd7c4a8d78febe9081bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonManagerA
+  ContinueButton: {fileID: 1678021915}
+  BackButton: {fileID: 693543433}
 --- !u!1 &293308100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1038,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4416889339775882146, guid: 577bd83298b043042bf177bfc298446d, type: 3}
   m_PrefabInstance: {fileID: 693543431}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &693543433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3186553965031719642, guid: 577bd83298b043042bf177bfc298446d, type: 3}
+  m_PrefabInstance: {fileID: 693543431}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &1117472784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2131,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &1678021915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
+  m_PrefabInstance: {fileID: 5198171142375941547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &2051317975
 GameObject:
   m_ObjectHideFlags: 0

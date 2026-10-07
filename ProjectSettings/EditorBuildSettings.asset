@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreateAccount.unity
     guid: 3c96b022d918da54ca358870cbb7e2cc
+  - enabled: 1
+    path: Assets/Scenes/FourOFourScene.unity
+    guid: f3fded6fcddd05d4ea6512368df88f74
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
