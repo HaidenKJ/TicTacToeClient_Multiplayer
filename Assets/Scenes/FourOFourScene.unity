@@ -1209,7 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7976379212948194587, guid: 577bd83298b043042bf177bfc298446d, type: 3}
       propertyPath: m_text
-      value: Return Back To The Create/Login Prompt
+      value: Return To The Create/Login Page
       objectReference: {fileID: 0}
     - target: {fileID: 7976379212948194587, guid: 577bd83298b043042bf177bfc298446d, type: 3}
       propertyPath: m_fontSize
