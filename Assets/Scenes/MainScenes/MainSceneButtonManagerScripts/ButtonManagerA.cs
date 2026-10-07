@@ -2,17 +2,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonManagerL : MonoBehaviour
+public class ButtonManagerA : MonoBehaviour // This script is purely for the AccountCreated scene.
 {
     public Button ContinueButton;
     public Button BackButton;
-    public Button ForgotPasswordButton;
 
     void Start()
     {
         SetupButton(ContinueButton, "ContinueButton", OnContinueClicked);
         SetupButton(BackButton, "BackButton", OnBackClicked);
-        SetupButton(ForgotPasswordButton, "ForgotPasswordButton", OnForgotPasswordClicked);
     }
 
     // Checks the button exists, logs a message if not, and hooks up the click handler if it does.
@@ -37,12 +35,6 @@ public class ButtonManagerL : MonoBehaviour
     {
         LoadScene("StartScene");
     }
-
-    private void OnForgotPasswordClicked()
-    {
-        LoadScene("FourOFourScene");
-    }
-
     private void LoadScene(string sceneName)
     {
         if (!Application.CanStreamedLevelBeLoaded(sceneName))

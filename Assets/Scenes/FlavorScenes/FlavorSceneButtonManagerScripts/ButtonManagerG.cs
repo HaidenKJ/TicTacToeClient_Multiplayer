@@ -1,17 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class ButtonManagerS : MonoBehaviour
+
+public class ButtonManagerG : MonoBehaviour // This script is purely for the succesfully created account scene
 {
     public Button QuitApplicationButton;
-    public Button LoginButton;
-    public Button CreateAccountButton;
 
     void Start()
     {
         SetupButton(QuitApplicationButton, "QuitApplicationButton", OnQuitClicked);
-        SetupButton(LoginButton, "LoginButton", OnLoginClicked);
-        SetupButton(CreateAccountButton, "CreateAccountButton", OnCreateAccountClicked);
     }
 
     // Checks the button exists, logs a message if not, and hooks up the click handler if it does.
@@ -35,17 +32,6 @@ public class ButtonManagerS : MonoBehaviour
         Application.Quit();
         #endif
     }
-
-    private void OnLoginClicked()
-    {
-        LoadScene("LoginToAccount");
-    }
-
-    private void OnCreateAccountClicked()
-    {
-        LoadScene("CreateAccount");
-    }
-
     private void LoadScene(string sceneName)
     {
         if (!Application.CanStreamedLevelBeLoaded(sceneName))

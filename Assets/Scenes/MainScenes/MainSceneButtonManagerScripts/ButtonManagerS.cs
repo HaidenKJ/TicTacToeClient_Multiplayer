@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class ButtonManagerA : MonoBehaviour
+public class ButtonManagerS : MonoBehaviour // This script is purely for the Start scene.
 {
-    public Button ContinueButton;
-    public Button BackButton;
+    public Button QuitApplicationButton;
+    public Button LoginButton;
+    public Button CreateAccountButton;
 
     void Start()
     {
-        SetupButton(ContinueButton, "ContinueButton", OnContinueClicked);
-        SetupButton(BackButton, "BackButton", OnBackClicked);
+        SetupButton(QuitApplicationButton, "QuitApplicationButton", OnQuitClicked);
+        SetupButton(LoginButton, "LoginButton", OnLoginClicked);
+        SetupButton(CreateAccountButton, "CreateAccountButton", OnCreateAccountClicked);
     }
 
     // Checks the button exists, logs a message if not, and hooks up the click handler if it does.
@@ -26,15 +27,25 @@ public class ButtonManagerA : MonoBehaviour
         button.onClick.AddListener(onClick);
     }
 
-    private void OnContinueClicked()
+    private void OnQuitClicked()
     {
-        Debug.Log("Continue button clicked, but nothing happened");
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+        Application.Quit();
+        #endif
     }
 
-    private void OnBackClicked()
+    private void OnLoginClicked()
     {
-        LoadScene("StartScene");
+        LoadScene("LoginToAccount");
     }
+
+    private void OnCreateAccountClicked()
+    {
+        LoadScene("CreateAccount");
+    }
+
     private void LoadScene(string sceneName)
     {
         if (!Application.CanStreamedLevelBeLoaded(sceneName))
