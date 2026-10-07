@@ -30,7 +30,7 @@ public class ButtonManagerL : MonoBehaviour // This script is purely for the Log
 
     private void OnContinueClicked()
     {
-        Debug.Log("Continue button clicked, but nothing happened");
+        Debug.Log("Continue button clicked");
     }
 
     private void OnBackClicked()
