@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
   m_PrefabInstance: {fileID: 5198171142375941547}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5198171142375941548}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -2480,7 +2480,7 @@ PrefabInstance:
     - target: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5198171142375941549}
+      objectReference: {fileID: 272896545}
     - target: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2587,31 +2587,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4007877443470524521, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1370906956}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3475568716761099597, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5198171142375941549}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
---- !u!1 &5198171142375941548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3475568716761099597, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
-  m_PrefabInstance: {fileID: 5198171142375941547}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5198171142375941549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5198171142375941548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c05e30e9e2869c409a7b8bff6263346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CreateAccountUI
-  nameInput: {fileID: 0}
-  passInput: {fileID: 0}
-  feedbackText: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

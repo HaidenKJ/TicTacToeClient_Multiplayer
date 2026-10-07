@@ -9,6 +9,7 @@ public class CreateAccountUI : MonoBehaviour
 
     void Start()
     {
+        Application.runInBackground = true;
         NetworkClient.Instance.OnServerMessage += HandleServerMessage;
     }
 

@@ -1227,7 +1227,7 @@ PrefabInstance:
     - target: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1509968479}
+      objectReference: {fileID: 268932569}
     - target: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1331,10 +1331,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3475568716761099597, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1509968479}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
 --- !u!224 &1509968476 stripped
 RectTransform:
@@ -1346,32 +1343,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1529281035515346663, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
   m_PrefabInstance: {fileID: 1509968475}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509968478}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
---- !u!1 &1509968478 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3475568716761099597, guid: dc8d52033c39bde4d88ef37eecfeaad7, type: 3}
-  m_PrefabInstance: {fileID: 1509968475}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1509968479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509968478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba904ecc94b49414f83e65ae7d7be19d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoginUI
-  nameInput: {fileID: 0}
-  passInput: {fileID: 0}
-  feedbackText: {fileID: 0}
 --- !u!1 &1570413006
 GameObject:
   m_ObjectHideFlags: 0

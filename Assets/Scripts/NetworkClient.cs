@@ -11,8 +11,8 @@ public class NetworkClient : MonoBehaviour
     NetworkPipeline reliableAndInOrderPipeline;
     NetworkPipeline nonReliableNotInOrderedPipeline;
     const ushort NetworkPort = 9001;
-    const string IPAddress = "154.50.13.40";
-
+    // const string IPAddress = "154.50.13.40";
+    const string IPAddress = "127.0.0.1";
     public static NetworkClient Instance;
     public System.Action<string> OnServerMessage;
 
